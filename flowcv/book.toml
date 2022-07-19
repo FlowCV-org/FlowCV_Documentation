@@ -1,0 +1,6 @@
+[book]
+authors = ["Richard Wardlow"]
+language = "en"
+multilingual = false
+src = "src"
+title = "FlowCV Documentation"
