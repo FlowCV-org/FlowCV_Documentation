@@ -23,6 +23,18 @@ For easy installation use one of the pre-compiled binary install packages availa
 
 ---
 
+First install system dependencies
+
+You'll need [home-brew](https://brew.sh) to install the packages
+
+Once you have home-brew installed then run the following commands to install the package dependencies
+```commandline
+brew install opencv
+brew install glfw3
+brew install glew
+brew install cmake
+```
+
 * Download MacOS DMG Package
 * Double Click on DMG file
 * Open Mounted DMG
