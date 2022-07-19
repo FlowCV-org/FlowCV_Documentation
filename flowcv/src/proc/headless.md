@@ -2,37 +2,33 @@
 
 Example Run:
 ```commandline
-Processing_Engine.exe -f face_detection.flow
+FlowCV_Engine.exe -f face_detection.flow
 ```
 
 Example Output:
 ```commandline
-Data Flow Processing Engine - v0.1.0
+Data Flow Processing Engine - v0.1.2
 
-Loading Plugins...
-Looking for Plugins in: E:\Dev_Tmp\OpenCV_Dataflow_Framework\Build\Plugins
-"E:\\Dev_Tmp\\OpenCV_Dataflow_Framework\\Build\\Plugins\\CsvFile.fp"
-"E:\\Dev_Tmp\\OpenCV_Dataflow_Framework\\Build\\Plugins\\ImageLoader.fp"
-"E:\\Dev_Tmp\\OpenCV_Dataflow_Framework\\Build\\Plugins\\ImageWriter.fp"
-"E:\\Dev_Tmp\\OpenCV_Dataflow_Framework\\Build\\Plugins\\Openvino_Plugins\\Head_Face_Emotion.fp"
-"E:\\Dev_Tmp\\OpenCV_Dataflow_Framework\\Build\\Plugins\\Openvino_Plugins\\Pose_Estimation_2D.fp"
-"E:\\Dev_Tmp\\OpenCV_Dataflow_Framework\\Build\\Plugins\\OscSend.fp"
-"E:\\Dev_Tmp\\OpenCV_Dataflow_Framework\\Build\\Plugins\\RealSense\\Realsense_Camera.fp"
-"E:\\Dev_Tmp\\OpenCV_Dataflow_Framework\\Build\\Plugins\\SerialSend.fp"
-"E:\\Dev_Tmp\\OpenCV_Dataflow_Framework\\Build\\Plugins\\ShapeColorizer.fp"
-"E:\\Dev_Tmp\\OpenCV_Dataflow_Framework\\Build\\Plugins\\ShapeCounter.fp"
-"E:\\Dev_Tmp\\OpenCV_Dataflow_Framework\\Build\\Plugins\\SimpleBlobTracker.fp"
-"E:\\Dev_Tmp\\OpenCV_Dataflow_Framework\\Build\\Plugins\\TcpSend.fp"
-"E:\\Dev_Tmp\\OpenCV_Dataflow_Framework\\Build\\Plugins\\UdpSend.fp"
-"E:\\Dev_Tmp\\OpenCV_Dataflow_Framework\\Build\\Plugins\\VideoCapture.fp"
-"E:\\Dev_Tmp\\OpenCV_Dataflow_Framework\\Build\\Plugins\\VideoLoader.fp"
-"E:\\Dev_Tmp\\OpenCV_Dataflow_Framework\\Build\\Plugins\\VideoWriter.fp"
+Looking for Plugins in: C:\Devl\FlowCV\FlowCV\cmake-build-release\Plugins
+"C:\\Devl\\FlowCV\\FlowCV\\cmake-build-release\\Plugins\\CsvFile.fp"
+"C:\\Devl\\FlowCV\\FlowCV\\cmake-build-release\\Plugins\\ImageLoader.fp"
+"C:\\Devl\\FlowCV\\FlowCV\\cmake-build-release\\Plugins\\ImageWriter.fp"
+"C:\\Devl\\FlowCV\\FlowCV\\cmake-build-release\\Plugins\\Openvino_Plugins\\Head_Face_Emotion.fp"
+"C:\\Devl\\FlowCV\\FlowCV\\cmake-build-release\\Plugins\\Openvino_Plugins\\Pose_Estimation_2D.fp"
+"C:\\Devl\\FlowCV\\FlowCV\\cmake-build-release\\Plugins\\OscSend.fp"
+"C:\\Devl\\FlowCV\\FlowCV\\cmake-build-release\\Plugins\\RealSense\\Realsense_Camera.fp"
+"C:\\Devl\\FlowCV\\FlowCV\\cmake-build-release\\Plugins\\SerialSend.fp"
+"C:\\Devl\\FlowCV\\FlowCV\\cmake-build-release\\Plugins\\ShapeColorizer.fp"
+"C:\\Devl\\FlowCV\\FlowCV\\cmake-build-release\\Plugins\\ShapeCounter.fp"
+"C:\\Devl\\FlowCV\\FlowCV\\cmake-build-release\\Plugins\\SimpleBlobTracker.fp"
+"C:\\Devl\\FlowCV\\FlowCV\\cmake-build-release\\Plugins\\TcpSend.fp"
+"C:\\Devl\\FlowCV\\FlowCV\\cmake-build-release\\Plugins\\UdpSend.fp"
+"C:\\Devl\\FlowCV\\FlowCV\\cmake-build-release\\Plugins\\VideoCapture.fp"
+"C:\\Devl\\FlowCV\\FlowCV\\cmake-build-release\\Plugins\\VideoLoader.fp"
+"C:\\Devl\\FlowCV\\FlowCV\\cmake-build-release\\Plugins\\VideoWriter.fp"
 16 Plugin(s) Loaded
-Loading Flow File: face_detection.flow
-Adding Node Instance (Internal): Viewer, 1001
-Adding Node Instance (Plugin): Video_Capture, 2001
-Adding Node Instance (Plugin): Head_Face_Emotion, 3001
-Flow State Loaded, 3 Nodes Loaded and Configured
+Loading Flow File: ./simple_test.flow
+Flow State Loaded, 5 Nodes Loaded and Configured
 Flow Processing Started
 ```
 

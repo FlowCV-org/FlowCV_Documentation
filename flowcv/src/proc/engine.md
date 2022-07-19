@@ -4,11 +4,14 @@ The Processing Engine is a headless processing application used to deploy flow g
 
 Usage:
 ```commandline
-Processing_Engine.exe  -f <string> [--] [--version] [-h]
+FlowCV_Engine.exe  -f <string> [--] [--version] [-h]
 
 
 Where:
 
+   -c <string>,  --cfg <string>
+     Custom Config File
+     
    -f <string>,  --flow <string>
      (required)  Flow File
 
