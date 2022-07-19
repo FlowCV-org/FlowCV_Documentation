@@ -27,9 +27,9 @@ check the currently open issues for bugs or feature request you are interested i
 
 create a branch for your work.
 
-when ready make a pull request to the master branch.
+when ready make a pull request to the target dev branch.
 
-make sure your pull request pass all of the CI tests, fix any issues as needed.
+make sure your pull request pass any required tests, fix any issues as needed.
 
 check for reviewer comments and provide feedback or changes based on reviewers comments
 
