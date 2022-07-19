@@ -1,6 +1,6 @@
 # Installation
 
-For easy installation use one of the pre-compiled binary install packages available in the [github release section](http://github.com)
+For easy installation use one of the pre-compiled binary install packages available in the [github release section](https://github.com/FlowCV-org/FlowCV/releases)
 
 ## Windows
 

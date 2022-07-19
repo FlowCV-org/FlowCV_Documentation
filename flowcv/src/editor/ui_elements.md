@@ -24,6 +24,5 @@ The Editor consists of 3 main Elements:
 ---
 
 
-Check out the [UI tutorial video](https://youtube.com/replace/with/video/link) for more details
 
 

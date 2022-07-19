@@ -22,4 +22,4 @@ You can also collapse the node property section if you want to keep it in the li
 
 ---
 
-Check out the [UI tutorial video](https://youtube.com/replace/with/video/link) for more details
+

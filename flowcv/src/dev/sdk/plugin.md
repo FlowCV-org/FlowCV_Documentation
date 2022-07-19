@@ -23,7 +23,7 @@ Add this to the target_link_libraries section:
     ${OpenCV_LIBS}
 ```
 
-You can either use the [plugin template](https://github.com/circuitsforfun/OpenCV_Dataflow_Framework/tree/main/Templates/Plugin) file as a starting point or use the [PluginMaker.py](../template_tool.md) python script to generate a more ready to go starting point.
+You can either use the [plugin template](https://github.com/FlowCV-org/FlowCV/tree/main/Templates/Plugin) file as a starting point or use the [PluginMaker.py](../template_tool.md) python script to generate a more ready to go starting point.
 
 A few key things to understand when creating your own plugin:
 
@@ -151,4 +151,4 @@ if (state.contains("border_size"))
     border_size_ = state["border_size"].get<int>();
 ```
 
-Check out some of the included [Plugins](https://github.com/circuitsforfun/OpenCV_Dataflow_Framework/tree/main/Plugins) to see more examples of how everything works
+Check out some of the included [Plugins](https://github.com/FlowCV-org/FlowCV/tree/main/Plugins) to see more examples of how everything works

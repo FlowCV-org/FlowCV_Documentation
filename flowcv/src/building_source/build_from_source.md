@@ -16,12 +16,12 @@ _** in gcc 7 std::filesystem is implemented in std::experimental::filesystem so 
 The documentation is added as a submodule, it is not required for any of the build steps so if you don't want the documentation source you don't need to clone recursively
 
 ```commandline
-git clone https://github.com/circuitsforfun/FlowCV.git
+git clone https://github.com/FlowCV-org/FlowCV.git
 ```
 
 if you do want the documentation source:
 ```commandline
-git clone --recursive https://github.com/circuitsforfun/FlowCV.git
+git clone --recursive https://github.com/FlowCV-org/FlowCV.git
 ```
 
 For platform specific build instructions use the links below

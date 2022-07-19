@@ -8,7 +8,7 @@ The Node Editor is built on top of the dataflow framework as an easy way to visu
 
 There are various [elements to the UI](ui_elements.md) and viewer nodes that allow you to interactively see the results of your flow graph in real-time.
 
-Check out the [UI tutorial video](https://youtube.com/replace/with/video/link) for more details
+
 
 
 
