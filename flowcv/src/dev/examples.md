@@ -20,9 +20,11 @@ Check out the [Processing Engine](../proc/engine.md) Section for specific detail
 
 Create a command line parser using [TCLAP](http://tclap.sourceforge.net/) library:
 ```c++
-CmdLine cmd("Data Flow Processing Engine", ' ', APP_VERSION);
+CmdLine cmd("FlowCV Processing Engine", ' ', APP_VERSION);
 ValueArg<std::string> flow_file_arg("f", "flow", "Flow File", true, "", "string");
+ValueArg<std::string> cfg_file_arg("c", "cfg", "Custom Config File", false, "", "string");
 cmd.add(flow_file_arg);
+cmd.add(cfg_file_arg);
 cmd.parse(argc, argv);
 ```
 
@@ -31,10 +33,51 @@ Instantiate the Flow Manager class:
 FlowCV::FlowCV_Manager flowMan;
 ```
 
+Get Application Path and Load Config File (Platform Specific Methods)
+```c++
+#ifdef __linux__ // [Linux Method for App Path Here]
+    ...
+#endif
+#ifdef _WINDOWS // [Windows Method for App Path Here]
+    ...
+#endif
+#if __APPLE__ // [MacOS Method for App Path Here]
+    ...
+#endif
+    std::string configFile;
+
+    if (cfg_file_arg.getValue().empty()) {
+        configFile = cfgDir;
+        configFile += std::filesystem::path::preferred_separator;
+        configFile += "flowcv_editor.cfg";
+    }
+    else {
+        configFile = cfg_file_arg.getValue();
+    }
+
+    appSettings.configPath = configFile;
+    ApplicationLoadSettings(appSettings);
+```
+
+
 Recursively load plugins from the plugin folder if it exists:
 ```c++
+std::string pluginDir = appDir;
+pluginDir += std::filesystem::path::preferred_separator;
+pluginDir += "Plugins";
 if (std::filesystem::exists(pluginDir))
     flowMan.plugin_manager_->LoadPlugins(pluginDir.c_str());
+```
+
+Get Extra Plugins From Config Plugin Paths
+```c++
+if (!appSettings.extPluginDir.empty()) {
+    for (const auto &path : appSettings.extPluginDir) {
+        if (std::filesystem::exists(path))
+            flowMan.plugin_manager_->LoadPlugins(path.c_str(), false);
+        }
+    }
+}
 ```
 
 Load a flow graph file, exit if there is an error:
@@ -126,12 +169,12 @@ std::cout << std::endl;
 
 Iterate over all of the internal nodes and print out information about the node:
 ```c++
-uint32_t iCount = flowMan.int_node_manager_->IntNodeCount();
+uint32_t iCount = flowMan.internal_node_manager_->NodeCount();
 std::cout << "Internal Node Count: " << iCount << std::endl;
 std::cout << "Node List: " << std::endl;
 for (int i = 0; i < iCount; i++) {
     NodeDescription intNodeDesc;
-    if (flowMan.int_node_manager_->GetIntNodeDescription(i, intNodeDesc)) {
+    if (flowMan.internal_node_manager_->GetNodeDescription(i, intNodeDesc)) {
         std::cout << "--------------------------------" << std::endl;
         std::cout << "    Name: " << intNodeDesc.name << std::endl;
         std::cout << "    Category: " << categories[intNodeDesc.category] << std::endl;

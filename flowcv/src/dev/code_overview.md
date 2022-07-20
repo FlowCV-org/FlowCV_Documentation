@@ -23,7 +23,6 @@ project
 │       │   ...
 │   
 └───Examples
-│   │   Headless_Process_Engine     - Application for running flows in headless processing mode
 │   │   OpenCV_Dataflow_Test        - Simple example showing how to use the dataflow framework to build processing applications
 │   
 └───FlowCV_SDK
@@ -43,6 +42,9 @@ project
 └───Plugins
 │   │   [Various Plugin Nodes]      - External node plugins to extend FlowCV functionality
 │   │   ...
+│   
+└───Processing_Engine
+│   │   Headless_Process_Engine     - Application for running flows in headless processing mode
 │   
 └───Templates
 │   │   Internal_Node               - A template for creating new internal nodes
