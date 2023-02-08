@@ -26,6 +26,12 @@
     - [Copy/Paste Nodes](editor/copy_paste.md)
     - [Viewer Node](editor/viewer.md)
     - [Depth Viewer 3D](editor/viewer3D.md)
+    - [DNN](DNN/dnn_nodes.md)
+      - [Image Classification](DNN/dnn_image_classification.md)
+      - [Object Detection](DNN/dnn_object_detection.md)
+      - [Human Pose](DNN/dnn_human_pose.md)
+      - [Segmentation](DNN/dnn_segmentation.md)
+      - [Text Detection & Recognition](DNN/dnn_text_detect_recognition.md)
 - [Processing Engine](proc/engine.md)
   - [Running A Flow In Headless Mode](proc/headless.md)
 

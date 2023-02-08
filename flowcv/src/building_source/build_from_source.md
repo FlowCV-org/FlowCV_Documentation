@@ -32,6 +32,6 @@ For platform specific build instructions use the links below
 
 - [Windows](windows.md)
 - [Linux](linux.md)
-- [OSX](osx.md)
+- [MacOS](macos.md)
 
 

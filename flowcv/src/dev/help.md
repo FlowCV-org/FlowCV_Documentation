@@ -4,7 +4,7 @@ While there has been a lot of ground worked laid down already there is still a l
 
 Here is a list of things that are still needed (but no where near a complete list)
 * More OpenCV functionality implemented as nodes... lots more!! (this is probably where I need the most help because there is so much to do)
-* More camera hardware plugin support (Oak and Oak-D, MYNT EYE, Azure Kinect DK, Flir machine vision... just to name a few)
+* More camera hardware plugin support (MYNT EYE, Azure Kinect DK, Flir machine vision... just to name a few)
 * Other computer vision or machine learning algorithms that aren't part of OpenCV
 * ROS 2 integration / support
 * Beta testing

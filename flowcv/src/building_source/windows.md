@@ -68,7 +68,7 @@ cmake .. -DBUILD_EXAMPLES=OFF -DBUILD_EDITOR=ON -DBUILD_ENGINE=ON -DBUILD_PLUGIN
 
 The CMake build script should automatically download and extract the pre-compiled binaries during the build initialization but if for some reason you run into an issue you can download and extract the file manually.
 
-[OpenCV 4.2](https://github.com/opencv/opencv/releases/download/4.2.0/opencv-4.2.0-vc14_vc15.exe)
+[OpenCV 4.5.5](https://github.com/opencv/opencv/releases/download/4.5.5/opencv-4.5.5-openvino-dldt-2021.4.2-vc16-avx2.zip)
 
 add the following build setting to CMake (change path to your extracted location):
 ```commandline

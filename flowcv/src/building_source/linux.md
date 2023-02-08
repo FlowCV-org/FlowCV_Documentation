@@ -4,10 +4,19 @@ First install system dependencies (skip any of the ones you already have install
 ```commandline
 sudo apt-get update
 sudo apt-get install build-essential
-sudo apt-get install libopencv-dev
 sudo apt-get install libglfw3
 sudo apt-get install libglfw3-dev
 ```
+
+Download [OpenVino Toolkit](https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/download.html) version 2022.1
+
+Follow the installation instructions
+
+After install run the OpenVino OpenCV Installer script:
+```commandline
+/opt/intel/openvino_2022/extras/scripts/download_opencv.sh
+```
+
 
 ### Building With CLion IDE
 
@@ -45,7 +54,13 @@ cd to the source dir then (Change build options as needed):
 ```commandline
 mkdir Build
 cd Build
-cmake .. -DBUILD_EXAMPLES=ON -DBUILD_EDITOR=ON -DBUILD_ENGINE=ON -DBUILD_PLUGINS=ON
-make
+cmake .. -DBUILD_EXAMPLES=ON \
+-DBUILD_EDITOR=ON \
+-DBUILD_ENGINE=ON \
+-DBUILD_PLUGINS=ON \
+-DOpenCV_DIR=/opt/intel/openvino_2022/extras/opencv/cmake
+cmake --build . --config Release -j 8
 ```
+
+_** replace -j 8 with your number of CPUs you want to utilize for compiling_
 

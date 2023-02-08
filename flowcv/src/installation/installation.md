@@ -15,25 +15,17 @@ For easy installation use one of the pre-compiled binary install packages availa
 ---
 
 * Download the debian package
-* The run command in folder with deb package: ```sudo apt install ./flowcv-app-0.1.0-ubuntu.deb```
+* The run command in folder with deb package: ```sudo apt install ./flowcv-app_x.x.x_ubuntu-amd64.deb```
   * If you're missing dependencies you can run: ```sudo apt --fix-broken install```
 
+To run after install just run:
+```commandline
+FlowCV.sh
+```
 
 ## macOS
 
 ---
-
-First install system dependencies
-
-You'll need [home-brew](https://brew.sh) to install the packages
-
-Once you have home-brew installed then run the following commands to install the package dependencies
-```commandline
-brew install opencv
-brew install glfw3
-brew install glew
-brew install cmake
-```
 
 * Download MacOS DMG Package
 * Double Click on DMG file
