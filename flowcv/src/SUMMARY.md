@@ -11,7 +11,7 @@
 - [Building From Source](building_source/build_from_source.md)
   - [Windows](building_source/windows.md)
   - [Linux](building_source/linux.md)
-  - [OSX](building_source/osx.md)
+  - [MacOS](building_source/macos.md)
 
 ---
 
