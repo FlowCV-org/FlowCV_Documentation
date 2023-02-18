@@ -15,7 +15,7 @@ _** in gcc 7 std::filesystem is implemented in std::experimental::filesystem so 
 
 The documentation is added as a submodule, it is not required for any of the build steps so if you don't want the documentation source you don't need to clone recursively.
 
-**_Make sure you have LFS installed and enabled, some of the various binary files (icons, images, etc.) are stored using LFS._**
+**_Make sure you have [LFS installed and enabled](https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage), some of the various binary files (icons, images, etc.) are stored using LFS._**
 
 ```commandline
 git clone https://github.com/FlowCV-org/FlowCV.git

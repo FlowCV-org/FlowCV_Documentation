@@ -1,4 +1,4 @@
-# Build On OSX
+# Build On MacOS
 
 First install system dependencies
 

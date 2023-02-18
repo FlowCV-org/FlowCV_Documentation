@@ -1,6 +1,6 @@
 # Node Editor
 
-![editor](../images/flowcv_ui.jpg)
+[![Intro Video](http://img.youtube.com/vi/-4Yosc7vefo/0.jpg)](https://www.youtube.com/watch?v=-4Yosc7vefo "Node Editor - Intro Video")
 
 The Node Editor User Interface is the front end interface for creating flow graphs, this is where you will create new nodes, connect the various inputs and outputs and configure parameters.
 
