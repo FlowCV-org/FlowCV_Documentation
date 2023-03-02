@@ -54,6 +54,7 @@ cd to the source dir then (Change build options as needed):
 ```commandline
 mkdir Build
 cd Build
+source /opt/intel/openvino_2022/setupvars.sh
 cmake .. -DBUILD_EXAMPLES=ON \
 -DBUILD_EDITOR=ON \
 -DBUILD_ENGINE=ON \
